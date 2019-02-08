@@ -1,6 +1,19 @@
 body{
   background-image: url("img/ny2.jpg");
   background-attachment: fixed;
+  margin-top: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 16%;
+  border-radius:20px;
+  margin: 15px 15px;
+  padding-left: 30px;
 }
 
 .masthead {
@@ -13,10 +26,6 @@ body{
     height: 100%;
     position: relative;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-
-  #nav-bar {
-      position: relative;
   }
 
   #portfolioPic {
@@ -69,7 +78,7 @@ body{
   }
 
   .white-filter {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.7);
     height:100%;
   }
 
@@ -125,3 +134,4 @@ body.modal-open{overflow:hidden!important;}
 .shift-left {
   padding-right: 200px;
 }
+
