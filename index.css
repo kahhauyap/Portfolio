@@ -1,7 +1,8 @@
 body{
   background-image: url("img/ny2.jpg");
-  background-attachment: fixed;
-  margin-top: 0;
+  background-attachment: fixed ;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 html {
@@ -10,7 +11,8 @@ html {
 
 .navbar {
   background-color: rgba(0, 0, 0, 0.6);
-  width: 16%;
+  width: 300px;
+  min-width: 300px;
   border-radius:20px;
   margin: 15px 15px;
   padding-left: 30px;
@@ -18,8 +20,8 @@ html {
 
 .masthead {
     padding-top: 10rem;
-    padding-bottom: 13rem;
-    background-image: url("img/header.jpg");
+    padding-bottom: 16.5rem;
+    background-image: url("img/sunset.jpg");
     background-position: center center;
     background-size: cover;
     width: 100%;
@@ -47,59 +49,90 @@ html {
     text-align: center;
     position: relative;
   }
-
-  hr {
-    max-width: 50px;
-    border-width: 3px;
-    border-color: #171717;
-  }
-
-  #abouthr {
-    max-width: 50px;
-    border-width: 3px;
-    border-color: #ffffff;
+  #greeting {
+    text-shadow: black 0px 0px 15px;
   }
 
   #about{
-    background-color: #2d3436;
-    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);  
-    width: 100%;
-    height: 400px;
-    position: relative;
-    color: white;
-  }
+  background-color: #2d3436;
+  background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);  
+  width: 100%;
+  height: 400px;
+  position: relative;
+  color: white;
+  text-shadow: black 0px 0px 5px;
+}
 
-  #about2, #about {
-    background-image: url("img/ny2.jpg");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover; 
-    height: 600px; 
-  }
+hr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #171717;
+}
 
-  .white-filter {
-    background: rgba(0, 0, 0, 0.7);
-    height:100%;
-  }
+.carousel-caption > h5 {
+  text-shadow: black 0px 0px 5px;
+  font-weight: bold;
+  font-size: 30px;
+}
 
-  .carousel {
-    box-shadow: 2px 4px 8px 2px rgba(255, 255, 255, 0.2), 10px 6px 20px 10px rgba(255, 255, 255, 0.19);
-  }
+#abouthr {
+  max-width: 50px;
+  border-width: 3px;
+  border-color: #ffffff;
+}
+
+ #about, #contact {
+  background: rgba(0, 0, 0, .3);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  height: 600px; 
+}
+
+#contact {
+  position: relative;
+}
+
+.black-filter {
+  background: rgba(0, 0, 0, 0.7);
+  height:100%;
+}
+
+.white-filter {
+  background: rgba(110, 106, 106, 0.2);
+  height:100%;
+}
+
+.carousel {
+  box-shadow: 2px 4px 8px 2px rgba(255, 255, 255, 0.2), 10px 6px 20px 10px rgba(255, 255, 255, 0.19);
+}
 
 .carousel-caption {
-  padding-bottom: 200px;
-  background: rgba(0,0,0,.5);
-  box-shadow: 0 0 8px 8px rgba(0,0,0,.2);
-
+  padding-bottom: 200px; 
   margin: auto;
-  border-radius: 25px
+  border-radius: 25px;
+  
 }
+.blur-filter{
+  background: rgba(0,0,0,.4);
+  overflow: hidden;
+  filter: blur(13px);
+  position: absolute;
+  height: 300px;
+  left: -50px;
+  right: -50px;
+  bottom: 70px;
+}  
 
 #modalBtn {
   height: 40px;
-  width: 120px;
-  font-size: 12px;
+  width: 100px;
+  font-size: 10px;
   border-radius: 25px;
+  background-color: black;
+  opacity: .8;
+  white-space:nowrap;
+  padding: 0px;
 }
 
 #leftArrow, #rightArrow {
@@ -111,10 +144,12 @@ html {
  
 }
 
-body.modal-open{overflow:hidden!important;}
-
-/*Optional:*/
-.modal-open, .modal{padding-right:0!important}
+.modal {
+  overflow-y: auto;
+}
+.modal-open{
+  margin-right:0px !important;
+}
 
 
 .header {
@@ -135,3 +170,14 @@ body.modal-open{overflow:hidden!important;}
   padding-right: 200px;
 }
 
+.active {
+  background-color: rgba(0, 0, 0, 0.0);
+  font-weight: bold;
+}
+
+a.anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+  top:-80px;
+}

@@ -55,7 +55,7 @@
                     <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#projects">Projects</a>
+                    <a class="nav-link" href="#project-anchor">Projects</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -81,8 +81,8 @@
     </div>
 
     <div id="about">
-        <div class="white-filter">
-            <br>
+        <div class="black-filter">
+            <br><br>
             <h1 style="color:white; font-size: 50px;"><strong>About</strong></h1>
             <hr id="abouthr">
             <div class="header">
@@ -98,7 +98,7 @@
                     <span>
                         <h3 class="left-text shift-right" style="float:left"><strong>Videri</strong></h3>
                         <p class="right-text" style="float:right; padding-top:10px;">
-                            Jan 2019 -Present</p>
+                            Jan 2019 - Present</p>
                         <h4 class="right-text shift-left" style=" padding-left: 200px">Software
                             Engineer
                             Intern</h4>
@@ -110,50 +110,69 @@
         </div>
     </div>
 
+    <a class="anchor" id="project-anchor"></a>
     <div id="projects" class="carousel slide " data-ride="carousel">
         <ol class="
         carousel-indicators">
             <li data-target="#projects" data-slide-to="0" class="active"></li>
             <li data-target="#projects" data-slide-to="1"></li>
             <li data-target="#projects" data-slide-to="2"></li>
+            <li data-target="#projects" data-slide-to="3"></li>
+
         </ol>
         <div class="carousel-inner" style="width:100%; height:800px;">
             <div class="carousel-item active">
                 <div class="view">
                     <img class="d-block w-100" src="img/mn.jpg" alt="First slide">
                 </div>
-                <div class="carousel-caption d-none d-md-block">
-                    <h5>MovieNerdz</h5>
-                    <p>Movie Discovery Database</p>
-                    <button type="button" class="btn btn-light" id="modalBtn" data-toggle="modal"
-                        data-target="#exampleModalCenter">Details</button>
+                <div>
+                    <div class="blur-filter" style="background: rgba(0,0,0,.7);"></div>
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <h5>MovieNerdz</h5>
+                        <p>Movie Discovery Database</p>
+
+                        <button type="button" class="btn btn-dark" id="modalBtn" data-toggle="modal"
+                            data-target="#exampleModalCenter">Details</button>
+                    </div>
+
                 </div>
             </div>
-
 
             <div class="carousel-item">
                 <img class="d-block w-100" src="img/bloom.jpg" alt=" Second slide">
+                <div class="blur-filter"></div>
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Bloom</h5>
-                    <p>Goal Planning</p>
-                    <button type="button" class="btn btn-light" id="modalBtn">Details</button>
+                    <p>Goal Setting and Progress Tracking</p>
+                    <button type="button" class="btn btn-dark" id="modalBtn">Details</button>
                 </div>
             </div>
-            <div class="carousel-item" style="position:absolute;">
-                <img class="d-block w-100" src="img/testfj.png" alt="Third slide">
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/foodjunkies.png" alt="Third slide">
+                <div class="blur-filter" style="bottom:-20px;height:250px; background: rgba(0,0,0,.5);"></div>
                 <div class="carousel-caption d-none d-md-block" style="  bottom:0; height: 30px">
                     <h5>Food Junkies</h5>
                     <p>Food Discovery</p>
-                    <button type="button" class="btn btn-light" id="modalBtn">Details</button>
+                    <button type="button" class="btn btn-dark" id="modalBtn">Details</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/fict.png" alt="Fourth slide">
+                <div class="blur-filter" style="bottom:-20px;height:250px; background: rgba(0,0,0,.5);"></div>
+                <div class="carousel-caption d-none d-md-block" style="bottom:0; height: 30px">
+                    <h5>Fict</h5>
+                    <p>Health & Fitness Nutrition Tracker</p>
+                    <button type="button" class="btn btn-dark" id="modalBtn">Details</button>
                 </div>
             </div>
         </div>
-        <a class="carousel-control-prev" href="#projects" role="button" data-slide="prev" style=" top:1%;right:0;">
+        <a class="carousel-control-prev" href="#projects" role="button" data-slide="prev" style="right:0; top:80%">
 
             <img src="https://img.icons8.com/ios/50/000000/chevron-left.png" id="leftArrow">
             <span class="sr-only">Previous</span>
         </a>
-        <a class="carousel-control-next" href="#projects" role="button" data-slide="next">
+        <a class="carousel-control-next" href="#projects" role="button" data-slide="next" style="top:80%">
             <img src="https://img.icons8.com/ios/50/000000/chevron-right.png" id="rightArrow">
             <span class="sr-only">Next</span>
         </a>
@@ -181,11 +200,12 @@
         </div>
     </div>
 
-    <div id="about2">
-        hey
+    <div id="contact">
+        <div class="white-filter"></div>
 
     </div>
-
+    <!--Javascript-->
+    <script type="text/javascript" src="index.js"></script>
 
 
 </body>
