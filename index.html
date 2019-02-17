@@ -193,7 +193,8 @@
                 <div class="carousel-caption d-none d-md-block">
                     <h5>Bloom</h5>
                     <p>Goal Setting and Progress Tracking</p>
-                    <button type="button" class="btn btn-dark" id="modalBtn">Details</button>
+                    <button type="button" class="btn btn-dark" id="modalBtn" data-toggle="modal"
+                        data-target="#BloomModal">Details</button>
                 </div>
             </div>
             <div class="carousel-item">
@@ -270,6 +271,61 @@
                                 Create an account to favorite or save movies to watch later!
                             </p>
                         </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bloom Modal -->
+    <div class="modal fade" id="BloomModal" tabindex="-1" role="dialog" aria-labelledby="BTitle" aria-hidden="true"
+        style="height:100%;">
+        <div class="modal-dialog modal-dialog-centered modal-fluid" role="document" style="width:90%;">
+            <div class="modal-content">
+                <div class="modal-header" style=" padding-left: 800px;">
+                    <h5 class="modal-title" id="exampleModalLongTitle"
+                        style="  text-align:center; margin:0; font-weight: bold; text-shadow: black 0px 0px 15px; color:white">
+                        Bloom</h5>
+
+                </div>
+                <div class="modal-body">
+                    <img class="d-block w-100 modal-image" src="img/bloom.jpg">
+                    <br>
+                    <div class="modal-text">
+                        <strong>Goal Setting & Progress Tracking Web App</strong>
+                        <div id="modal-info">
+
+
+                            <p>
+                                It can be hard to keep track of all our goals for the different things in our lives
+                                whether it </br>
+                                be fitness, education, or our careers. Bloom is a way for you to plan goals, and add
+                                subgoals </br>
+                                along the way. You can filter through goals by priority to stay organized, post progress
+                                updates, </br>
+                                and upload photos that you can look back on when you've
+                                accomplished your goal! <br>
+                            </p>
+                        </div>
+                        <div id="modal-links">
+                            <strong>Visit:</strong>
+                            <a href="https://blooming.herokuapp.com" target="_blank">
+                                https://blooming.herokuapp.com</a>
+                            <br>
+                            <strong>Github:</strong>
+                            <a href="https://github.com/Hunter-College-CSCI-39548-Fall-2018/team2" target="_blank">
+                                https://github.com/Hunter-College-CSCI-39548-Fall-2018/team2</a>
+                        </div>
+
+                        <div id="modal-stack">
+                            <strong>Stack: </strong> React, Node/Express, MongoDB
+                        </div>
+
+                        <br>
+
 
                     </div>
                 </div>
