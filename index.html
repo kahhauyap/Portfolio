@@ -89,7 +89,7 @@
     </div>
     </div>
 
-    <div id="about">
+    <div id="about" style="min-height: 600px;">
         <div class="black-filter">
 
             <div class="row">
@@ -106,8 +106,7 @@
                     <h3 class="left-text" style="padding-left:100px"><strong>Hunter College</strong></h3>
                 </div>
                 <div class="column-mid">
-                    <h4 class="right-text">Bachelor of Arts in Computer Science, minor in
-                        Mathematics</h4>
+                    <h4 class="right-text">Bachelor of Arts in Computer Science, minor in Mathematics</h4>
                 </div>
                 <div class="column-right">
                     <p class="right-text"> Expected: May 2019</p>
@@ -116,21 +115,69 @@
 
             <div class="row">
                 <div class="column-left">
+                    <h3 class="left-text" style="padding-left:90px"><strong>CUNY 2X Bootcamp</strong></h3>
+                </div>
+                <div class="column-mid">
+                    <h4 class="right-text">Full stack React Web Development Bootcamp</h4>
+                </div>
+                <div class="column-right">
+                    <p class="right-text"> Jan 2019 </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column-left">
                     <h3 class="left-text" style="padding-left:100px"><strong>Videri</strong></h3>
                 </div>
                 <div class="column-mid">
-                    <h4>Software
-                        Engineer
-                        Intern</h4>
+                    <h4>Software Engineer Intern</h4>
                 </div>
                 <div class="column-right">
                     <p class="right-text">
                         Jan 2019 - Present</p>
                 </div>
-
+            </div>
+            <br>
+            <hr id="abouthr" style="max-width:500px;">
+            <br>
+            <div id="about-skills">
+                <h4 style="display:inline-block; text-align:left"><strong>Relevant Coursework:</strong> </h4>
+                <h5 style=" margin-top: 5px ; display:inline-block">&nbsp Software Analysis and Design, Web Development,
+                    Android Development, Database Management
+                </h5>
             </div>
 
+            <div id="about-skills">
+                <h4 style="display:inline-block; text-align:left"><strong>Programming:</strong> </h4>
+                <h5 style=" margin-top: 5px; display:inline-block">&nbsp C/C++, Java,
+                    Javascript, React/Redux,
+                    Node/Express, HTML/CSS, MySQL, PostgreSQL, SQLite, MongoDB
+                </h5>
+            </div>
 
+            <!-- Bootstrap grid
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-">
+                        <h3><strong>Hunter College</strong></h3>
+                    </div>
+                    <div class="col-lg-">
+                        <h4>Bachelor of Arts in Computer Science, minor in
+                            Mathematics</h4>
+                    </div>
+                    <div class="col-md-">
+                        <p> Expected: May 2019</p>
+                    </div>
+                </div>
+            </div>
+
+            <span style=>
+                <h3 style="text-align:left;float:left;"><strong>Hunter College </strong></h3>
+                <p style="text-align:right;float:right;"> Expected: May 2019</p>
+                <h4 style="text-align:right;float:right;">Bachelor of Arts in Computer Science, minor in
+                    Mathematics</h4>
+            </span>
+        -->
             <!--
             <div class="header">
                 <span>
@@ -203,7 +250,8 @@
                 <div class="carousel-caption d-none d-md-block" style="  bottom:0; height: 30px">
                     <h5>Food Junkies</h5>
                     <p>Food Discovery</p>
-                    <button type="button" class="btn btn-dark" id="modalBtn">Details</button>
+                    <button type="button" class="btn btn-dark" id="modalBtn" data-toggle="modal"
+                        data-target="#FoodJunkiesModal">Details</button>
                 </div>
             </div>
             <div class="carousel-item">
@@ -212,7 +260,8 @@
                 <div class="carousel-caption d-none d-md-block" style="bottom:0; height: 30px">
                     <h5>Fict</h5>
                     <p>Health & Fitness Nutrition Tracker</p>
-                    <button type="button" class="btn btn-dark" id="modalBtn">Details</button>
+                    <button type="button" class="btn btn-dark" id="modalBtn" data-toggle="modal"
+                        data-target="#FictModal">Details</button>
                 </div>
             </div>
         </div>
@@ -234,9 +283,9 @@
         aria-hidden="true" style="height:100%;">
         <div class="modal-dialog modal-dialog-centered modal-fluid" role="document" style="width:90%;">
             <div class="modal-content">
-                <div class="modal-header" style=" padding-left: 800px;">
+                <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLongTitle"
-                        style="  text-align:center; margin:0; font-weight: bold; text-shadow: black 0px 0px 15px; color:white">
+                        style="  text-align:center; margin:auto; font-weight: bold; text-shadow: black 0px 0px 15px; color:white">
                         MovieNerdz</h5>
 
                 </div>
@@ -245,6 +294,13 @@
                     <br>
                     <div class="modal-text">
                         <strong>Movie Discovery Web App</strong>
+                        <p>
+                            MovieNerdz is a database of the most popular, and top trending movies that helps you
+
+                            find what </br> to watch without all the clutter that other sites have. Find a movie you
+                            like and click for more details.</br>
+                            Create an account to favorite or save movies to watch later!
+                        </p>
                         <div id="modal-links">
                             <strong>Visit:</strong>
                             <a href="https://movienerdz.herokuapp.com" target="_blank">
@@ -262,14 +318,7 @@
                         <br>
                         <div id="modal-info">
 
-                            <h4><strong>About</strong></h4>
-                            <p>
-                                MovieNerdz is a database of the most popular, and top trending movies that helps you
 
-                                find what </br> to watch without all the clutter that other sites have. Find a movie you
-                                like and click for more details.</br>
-                                Create an account to favorite or save movies to watch later!
-                            </p>
                         </div>
 
                     </div>
@@ -285,11 +334,10 @@
         style="height:100%;">
         <div class="modal-dialog modal-dialog-centered modal-fluid" role="document" style="width:90%;">
             <div class="modal-content">
-                <div class="modal-header" style=" padding-left: 800px;">
+                <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLongTitle"
-                        style="  text-align:center; margin:0; font-weight: bold; text-shadow: black 0px 0px 15px; color:white">
+                        style="  text-align:center; margin:auto; font-weight: bold; text-shadow: rgb(59, 158, 84) 0px 0px 15px; color:white">
                         Bloom</h5>
-
                 </div>
                 <div class="modal-body">
                     <img class="d-block w-100 modal-image" src="img/bloom.jpg">
@@ -297,14 +345,13 @@
                     <div class="modal-text">
                         <strong>Goal Setting & Progress Tracking Web App</strong>
                         <div id="modal-info">
-
-
                             <p>
                                 It can be hard to keep track of all our goals for the different things in our lives
                                 whether it </br>
                                 be fitness, education, or our careers. Bloom is a way for you to plan goals, and add
                                 subgoals </br>
-                                along the way. You can filter through goals by priority to stay organized, post progress
+                                along the way. You can filter through goals by priority to stay organized, post
+                                progress
                                 updates, </br>
                                 and upload photos that you can look back on when you've
                                 accomplished your goal! <br>
@@ -323,21 +370,102 @@
                         <div id="modal-stack">
                             <strong>Stack: </strong> React, Node/Express, MongoDB
                         </div>
-
                         <br>
-
-
                     </div>
                 </div>
                 <div class="modal-footer">
-
                 </div>
             </div>
-
         </div>
     </div>
-
-
+    <!-- FoodJunkies Modal -->
+    <div class="modal fade" id="FoodJunkiesModal" tabindex="-1" role="dialog" aria-labelledby="FJTitle"
+        aria-hidden="true" style="height:100%;">
+        <div class="modal-dialog modal-dialog-centered modal-fluid" role="document" style="width:90%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"
+                        style="  text-align:center; margin:auto; font-weight: bold; text-shadow: rgb(22, 218, 169) 0px 0px 15px; color:white">
+                        Food Junkies</h5>
+                </div>
+                <div class="modal-body">
+                    <img class="d-block w-100 modal-image" src="img/foodjunkies.png">
+                    <br>
+                    <div class="modal-text">
+                        <strong>Food Discovery Android App</strong>
+                        <div id="modal-info">
+                            <p>
+                                Food Junkies is the answer to the age old question "Where should we eat?" </br>
+                                We recommend dishes to you based on your preferences, and the more you use the app
+                                </br>
+                                the more personalized the recommendations are! Swipe through a short cuisine quiz so
+                                </br>
+                                we know what kinds of dishes to start you off with. After swiping through and
+                                finding a
+                                dish </br>
+                                you like we'll find the top restraunts in your area based on rating, price, and
+                                distance!
+                            </p>
+                        </div>
+                        <div id="modal-links">
+                            <strong>Github:</strong>
+                            <a href="https://github.com/kahhauyap/FoodJunkies" target="_blank">
+                                https://github.com/kahhauyap/FoodJunkies</a>
+                        </div>
+                        <div id="modal-stack">
+                            <strong>Stack: </strong> Java, MySQL
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fict Modal -->
+    <div class="modal fade" id="FictModal" tabindex="-1" role="dialog" aria-labelledby="FTitle" aria-hidden="true"
+        style="height:100%;">
+        <div class="modal-dialog modal-dialog-centered modal-fluid" role="document" style="width:90%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"
+                        style="text-align:center; margin:auto; font-weight: bold; text-shadow: rgb(69, 191, 240) 0px 0px 15px; color:white">
+                        Fict</h5>
+                </div>
+                <div class="modal-body">
+                    <img class="d-block w-100 modal-image" src="img/fict.png">
+                    <br>
+                    <div class="modal-text">
+                        <strong>Health & Fitness Nutrition Tracker Android App</strong>
+                        <div id="modal-info">
+                            <p>
+                                Traditional calorie trackers suffer from the tedious task of having to manually
+                                record
+                                foods <br> and their nutrition. Fict gives you the option of taking a picture of
+                                your
+                                meal, then using<br> Visual Recognition
+                                classify the dish
+                                and return nutritional information for easy logging. <br>
+                                Create personalized diet plans with the Macronutrition Calculator, and get started!
+                            </p>
+                        </div>
+                        <div id="modal-links">
+                            <strong>Github:</strong>
+                            <a href="https://github.com/kahhauyap/Fict" target="_blank">
+                                https://github.com/kahhauyap/Fict</a>
+                        </div>
+                        <div id="modal-stack">
+                            <strong>Stack: </strong> Java, SQLite
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Contact -->
     <div id="contact">
         <div class="overlay" style="padding-top:60px">
@@ -345,18 +473,37 @@
             <h1 style=" color:white; font-size: 40px;"><strong>Contact</strong>
             </h1>
             <hr id="abouthr">
-
-            <div class="row contact-info">
-                <div class="column">
-                    <img src="img/github.png" class="icon"> <a href="https://github.com/kahhauyap" target="_blank">
-                        <span>Github</span></a> </div>
-                <div class=" column">
-                    <img src="https://img.icons8.com/color/48/000000/linkedin.png">
-                    <a href="https://www.linkedin.com/in/kah-hau-yap/" target="_blank">
-                        <span>LinkedIn</span></a> </div>
-                <div class="column">
-                    <img src="https://img.icons8.com/color/48/000000/gmail.png"> <a href="mailto:kahhauyap@gmail.com">
-                        <span style="width:500px;">kahhauyap@gmail.com</span></a> </div>
+            <!-- Old grid
+                <div class="row contact-info">
+                    <div class="column">
+                        <img src="img/github.png" class="icon"> <a href="https://github.com/kahhauyap" target="_blank">
+                            <span>Github</span></a> </div>
+                    <div class=" column">
+                        <img src="https://img.icons8.com/color/48/000000/linkedin.png">
+                        <a href="https://www.linkedin.com/in/kah-hau-yap/" target="_blank">
+                            <span>LinkedIn</span></a> </div>
+                    <div class="column">
+                        <img src="https://img.icons8.com/color/48/000000/gmail.png"> <a href="mailto:kahhauyap@gmail.com">
+                            <span style="width:500px;">kahhauyap@gmail.com</span></a> </div>
+                </div>
+            -->
+            <div class="container" style="padding-top: 20px;">
+                <div class="row contact-info">
+                    <div class="col">
+                        <img src="img/github.png" class="icon"> <a href="https://github.com/kahhauyap" target="_blank">
+                            <span>Github</span></a>
+                    </div>
+                    <div class="col">
+                        <img src="https://img.icons8.com/color/48/000000/linkedin.png">
+                        <a href="https://www.linkedin.com/in/kah-hau-yap/" target="_blank">
+                            <span>LinkedIn</span></a>
+                    </div>
+                    <div class="col">
+                        <img src="https://img.icons8.com/color/48/000000/gmail.png"> <a
+                            href="mailto:kahhauyap@gmail.com">
+                            <span style="width:500px;">kahhauyap@gmail.com</span></a>
+                    </div>
+                </div>
             </div>
 
         </div>
