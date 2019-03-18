@@ -389,6 +389,10 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 81%);
   background: linear-gradient(0deg, rgb(224, 224, 224) 0%, rgba(0,0,0,1) 81%);
 }
 
+#programming {
+  padding-right: 12px;
+}
+
 @media screen 
   and (min-device-width: 1200px) 
   and (max-device-width: 1600px) 
@@ -412,8 +416,9 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 81%);
     #bootcamp-date {
       padding-left: 25px !important;
     }
-    #programming {
-      padding-left: 9px;
+    #programming{
+      padding-right: 0;
     }
+
 }
 
