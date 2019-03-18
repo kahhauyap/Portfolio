@@ -113,26 +113,6 @@ hr {
   text-align: center;
 }
 
- /* Laptops */
-@media only screen and (min-width: 1140px) {
- 
-  #about h3, #about h4 {
-    font-size: 20px !important;
-  }
-  #about p {
-    font-size: 15px !important;
-  }
-  .row {
-    white-space: nowrap;
-    overflow: hidden;
-  }
-  .column-right {
-    padding-left: 50px !important;
-  }
-  #bootcamp-date {
-      padding-left: 30px !important;
-    }
-}
 
 .overlay {
   background:rgba(0, 0, 0, 0.8);
@@ -435,5 +415,5 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 81%);
     #programming {
       padding-left: 9px;
     }
-
 }
+
