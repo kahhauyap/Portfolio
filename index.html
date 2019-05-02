@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Kah</title>
+    <link rel="icon" href="https://img.icons8.com/cotton/64/000000/person-male.png">
 
     <!--Bootstrap-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet"
@@ -36,6 +37,7 @@
         src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.7.1/js/mdb.min.js"></script>
 
     <link href="index.css" rel="stylesheet">
+
 
 </head>
 
@@ -155,58 +157,12 @@
                     <h4 id="programming" style="display:inline-block; text-align:left"><strong>Programming:</strong>
                     </h4>
                     <h5 style=" margin-top: 5px; display:inline-block">&nbsp C/C++, Java,
-                        Javascript, React/Redux,
-                        Node/Express, HTML/CSS, MySQL, PostgreSQL, SQLite, MongoDB
+                        Javascript, TypeScript, React/Redux, Angular,
+                        Node/Express, HTML/CSS, MySQL, PostgreSQL, MongoDB
                     </h5>
                 </div>
             </div>
-            <!-- Bootstrap grid
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-">
-                        <h3><strong>Hunter College</strong></h3>
-                    </div>
-                    <div class="col-lg-">
-                        <h4>Bachelor of Arts in Computer Science, minor in
-                            Mathematics</h4>
-                    </div>
-                    <div class="col-md-">
-                        <p> Expected: May 2019</p>
-                    </div>
-                </div>
-            </div>
 
-            <span style=>
-                <h3 style="text-align:left;float:left;"><strong>Hunter College </strong></h3>
-                <p style="text-align:right;float:right;"> Expected: May 2019</p>
-                <h4 style="text-align:right;float:right;">Bachelor of Arts in Computer Science, minor in
-                    Mathematics</h4>
-            </span>
-        -->
-            <!--
-            <div class="header">
-                <span>
-                    <h3 class="left-text" style="float:left"><strong>Hunter College</strong></h3>
-                    <p class="right-text" style="float:right; padding-top:10px;"> Expected: May 2019</p>
-                    <h4 class="right-text" style="float:right">Bachelor of Arts in Computer Science, minor in
-                        Mathematics</h4>
-                </span>
-                <br>
-                <br> <br> <br>
-                <div>
-                    <span>
-                        Videri
-                        <p class="right-text" style="float:right; padding-top:10px;">
-                            Jan 2019 - Present</p>
-                        <h4 class="right-text shift-left" style=" padding-left: 200px">Software
-                            Engineer
-                            Intern</h4>
-
-                    </span>
-                </div>
-
-            </div>
-        -->
         </div>
     </div>
 
@@ -218,10 +174,32 @@
             <li data-target="#project" data-slide-to="1"></li>
             <li data-target="#project" data-slide-to="2"></li>
             <li data-target="#project" data-slide-to="3"></li>
+            <li data-target="#project" data-slide-to="4"></li>
+            <li data-target="#project" data-slide-to="5"></li>
 
         </ol>
-        <div class="carousel-inner" style="width:100%; height:800px;">
+
+        <div class="carousel-inner">
+
             <div class="carousel-item active">
+                <div class="view">
+                    <img class="d-block w-100" src="img/lennysipss2.jpg" alt="First slide" style="height:950px;">
+                </div>
+                <div>
+                    <div class="blur-filter" style="background: rgba(0,0,0,.8);"></div>
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <h5>LennySipss</h5>
+                        <p>Drink Blog</p>
+
+                        <button type="button" class="btn btn-dark" id="modalBtn" data-toggle="modal"
+                            data-target="#LennySipssModal">Details</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
                 <div class="view">
                     <img class="d-block w-100" src="img/mn.jpg" alt="First slide" style="height:950px;">
                 </div>
@@ -234,6 +212,24 @@
 
                         <button type="button" class="btn btn-dark" id="modalBtn" data-toggle="modal"
                             data-target="#MovieNerdzModal">Details</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <div class="view">
+                    <img class="d-block w-100" src="img/stock.jpg" alt="First slide" style="height:950px;">
+                </div>
+                <div>
+                    <div class="blur-filter" style="background: rgba(0,0,0,.5);"></div>
+                    <div class="carousel-caption d-none d-md-block">
+
+                        <h5>StockT</h5>
+                        <p>Stock Portfolio Web App</p>
+
+                        <button type="button" class="btn btn-dark" id="modalBtn" data-toggle="modal"
+                            data-target="#StockModal">Details</button>
                     </div>
 
                 </div>
@@ -282,6 +278,52 @@
     </div>
 
     <!-- Modals -->
+
+    <!-- LennySipssModal -->
+    <div class="modal fade" id="LennySipssModal" tabindex="-1" role="dialog" aria-labelledby="LSTitle"
+        aria-hidden="true" style="height:100%;">
+        <div class="modal-dialog modal-dialog-centered modal-fluid" role="document" style="width:90%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"
+                        style="  text-align:center; margin:auto; font-weight: bold; text-shadow: black 0px 0px 15px; color:white">
+                        MovieNerdz</h5>
+
+                </div>
+                <div class="modal-body">
+                    <img class="d-block w-100 modal-image" src="img/lennysipss.JPG" alt="First slide">
+                    <br>
+                    <div class="modal-text">
+                        <strong>Drink Blog</strong>
+                        <p>
+                            This site was created for a drink blogger with hundreds of followers to showcase a menu
+                            of </br>
+                            original drinks, recipes, and video tutorials. Make your own drink at home, or scroll
+                            through</br>
+                            bar and restraunt reviews to find the next spot to grab a drink.
+                        </p>
+                        <div id="modal-links">
+                            <strong>Visit:</strong>
+                            <a href="https://kahhauyap.github.io/lennysipss/" target="_blank">
+                                https://kahhauyap.github.io/lennysipss</a>
+                            <br>
+                            <strong>Github:</strong>
+                            <a href="https://github.com/kahhauyap/lennysipss" target="_blank">
+                                https://github.com/kahhauyap/lennysipss</a>
+                        </div>
+
+                        <div id="modal-stack">
+                            <strong>Stack: </strong> Angular, TypeScript
+                        </div>
+
+                        <br>
+                        <div id="modal-info"> </div>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- MovieNerdz Modal -->
     <div class="modal fade" id="MovieNerdzModal" tabindex="-1" role="dialog" aria-labelledby="MNTitle"
@@ -334,6 +376,46 @@
             </div>
         </div>
     </div>
+
+    <!-- StockModal -->
+    <div class="modal fade" id="StockModal" tabindex="-1" role="dialog" aria-labelledby="STitle" aria-hidden="true"
+        style="height:100%;">
+        <div class="modal-dialog modal-dialog-centered modal-fluid" role="document" style="width:90%;">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle"
+                        style="  text-align:center; margin:auto; font-weight: bold; text-shadow: black 0px 0px 15px; color:white">
+                        StockT</h5>
+
+                </div>
+                <div class="modal-body">
+                    <img class="d-block w-100 modal-image" src="img/stock.JPG" alt="First slide">
+                    <br>
+                    <div class="modal-text">
+                        <strong>Stock Portfolio Web App</strong>
+                        <p>
+                            StockT is a web app that allows users to simulate purchasing stocks, and review</br>
+                            their performance in real time with up to date market information, before investing.
+                        </p>
+                        <div id="modal-links">
+                            <strong>Github:</strong>
+                            <a href="https://github.com/kahhauyap/TTP-FS" target="_blank">
+                                https://github.com/kahhauyap/TTP-FS</a>
+                        </div>
+
+                        <div id="modal-stack">
+                            <strong>Stack: </strong> React, Node/Express, MongoDB
+                        </div>
+
+                        <br>
+                        <div id="modal-info"> </div>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+
     <!-- Bloom Modal -->
     <div class="modal fade" id="BloomModal" tabindex="-1" role="dialog" aria-labelledby="BTitle" aria-hidden="true"
         style="height:100%;">
@@ -478,20 +560,6 @@
             <h1 style=" color:white; font-size: 40px; margin-right: 13px;"><strong>Contact</strong>
             </h1>
             <hr id="abouthr">
-            <!-- Old grid
-                <div class="row contact-info">
-                    <div class="column">
-                        <img src="img/github.png" class="icon"> <a href="https://github.com/kahhauyap" target="_blank">
-                            <span>Github</span></a> </div>
-                    <div class=" column">
-                        <img src="https://img.icons8.com/color/48/000000/linkedin.png">
-                        <a href="https://www.linkedin.com/in/kah-hau-yap/" target="_blank">
-                            <span>LinkedIn</span></a> </div>
-                    <div class="column">
-                        <img src="https://img.icons8.com/color/48/000000/gmail.png"> <a href="mailto:kahhauyap@gmail.com">
-                            <span style="width:500px;">kahhauyap@gmail.com</span></a> </div>
-                </div>
-            -->
             <div class="container" style="padding-top: 20px;">
                 <div class="row contact-info">
                     <div class="col">
